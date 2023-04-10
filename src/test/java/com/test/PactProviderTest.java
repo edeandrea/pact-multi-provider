@@ -25,8 +25,8 @@ import io.restassured.RestAssured;
 @MockServerConfig(providerName = "rest-heroes", port = PactProviderTest.HEROES_PORT, hostInterface = "localhost")
 @MockServerConfig(providerName = "rest-villains", port = PactProviderTest.VILLAINS_PORT, hostInterface = "localhost")
 public class PactProviderTest {
-	static final String HEROES_PORT = "51234";
-	static final String VILLAINS_PORT = "51235";
+	static final String HEROES_PORT = "1234";
+	static final String VILLAINS_PORT = "1235";
 
 	@Pact(consumer = "rest-fights", provider = "rest-heroes")
   public V4Pact helloHeroesPact(PactDslWithProvider builder) {
